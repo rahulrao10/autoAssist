@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autoassist"
+version = "0.1.0"
+description = "Lightweight AutoML-style library for supervised learning on tabular data"
+requires-python = ">=3.9"
+dependencies = ["pandas>=1.5", "numpy>=1.23", "scikit-learn>=1.2", "joblib>=1.2"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["autoassist"]
